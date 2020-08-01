@@ -11,15 +11,15 @@ github.com/nosremetnarg
 * [License(s)](#license(s):)
 
 ## DESCRIPTION:
-adfad
+This app quickly generates a clean README page after a few simple prompts.
 ## LANGUAGES USED:
- JavaScript , HTML , CSS , ES6 , jQuery , Bootstrap , Node 
+ JavaScript , Node 
 ## INSTALLATION:
-adfada
+Install node on your computer as well as download my code.
 ## CONTRIBUTING DEVELOPERS:
 none
 ## QUESTIONS:
-If you have any questions, you can reach me here: gran.alex.Emer@gmnail.com
+If you have any questions, you can reach me here: grant.alex.emerson@gmail.com
 ## LICENSE(S)
 
 
