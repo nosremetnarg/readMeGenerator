@@ -72,8 +72,16 @@ const questions = [
         type: 'input',
         name: 'license',
         message: 'What license will you use? If you will not use a license enter "none"'
-
-    }
+        // choices: [' MIT ', ' HTML ', ' CSS ', ' ES6 ', ' jQuery ', ' Bootstrap ', ' Node ']
+        
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Please enter your email to handle and questions regarding your app: '
+        // choices: [' MIT ', ' HTML ', ' CSS ', ' ES6 ', ' jQuery ', ' Bootstrap ', ' Node ']
+        
+    },
 
 ]
 

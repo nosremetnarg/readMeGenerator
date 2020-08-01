@@ -3,10 +3,19 @@ function generateMarkdown(data) {
   return `
 ${"# " + data.title }
 ${"## DEVELOPED BY: " +  '\n' + "github.com/" + data.gitHubName}
+${"## Table of Contents" }
+* [Description](#description:)
+* [Languages](#languages-used:)
+* [Installation](#installation:)
+* [Contributing Developers](#contributing-developers:)
+* [Questions](#questions:)
+* [License(s)](#license(s):)
+
 ${"## DESCRIPTION:"+ '\n' + data.description}
 ${"## LANGUAGES USED:" + '\n' + data.languages}
-${"## HOW TO INSTALL THIS APP:" + '\n' + data.installation}
+${"## INSTALLATION:" + '\n' + data.installation}
 ${"## CONTRIBUTING DEVELOPERS:" + '\n'  + data.collaborators}
+${"## QUESTIONS:" + '\n' + "If you have any questions, you can reach me here: " + data.email}
 ${"## LICENSE(S)" + '\n'}
 ${'\n' + `![GitHub](https://img.shields.io/github/license/${data.gitHubName}/${data.title})`}
 ${'\n' + `![GitHub followers](https://img.shields.io/github/followers/${data.gitHubName}?label=GitHub%20Followers&logo=Github&?style=social)`}
