@@ -1,21 +1,20 @@
 
-# readmeGenerator
+# groupProject
 ## DEVELOPED BY: 
 github.com/nosremetnarg
 ## DESCRIPTION:
-nope
+nononfff
 ## LANGUAGES USED:
- JavaScript , HTML , CSS , ES6 , jQuery , Bootstrap , Node 
+ JavaScript , HTML , CSS , jQuery 
 ## HOW TO INSTALL THIS APP:
-nappppp
+too many
 ## CONTRIBUTING DEVELOPERS:
-none
+a lot
 ## LICENSE(S)
 none
 
 ![GitHub followers](https://img.shields.io/github/followers/nosremetnarg?label=GitHub%20Followers&logo=Github&?style=social)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/nosremetnarg/readmeGenerator)
+![GitHub language count](https://img.shields.io/github/languages/count/nosremetnarg/groupProject?logo=GitHub)
 
-![GitHub language count](https://img.shields.io/github/languages/count/nosremetnarg/readmeGenerator?logo=GitHub)
-
+![GitHub last commit](https://img.shields.io/github/last-commit/nosremetnarg/groupProject)
