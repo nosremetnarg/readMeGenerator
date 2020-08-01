@@ -47,7 +47,7 @@ const questions = [
         type: 'checkbox',
         name: 'languages',
         message: 'What did you this project with? (Check all that apply)',
-        choices: ['JavaScript ' , 'HTML ' , 'CSS ' , 'ES6 ' , 'jQuery ' , 'Bootstrap ' , 'Node ']
+        choices: [' JavaScript ', ' HTML ', ' CSS ', ' ES6 ', ' jQuery ', ' Bootstrap ', ' Node ']
     },
     {
         type: 'input',
@@ -62,19 +62,6 @@ const questions = [
             }
         }
     },
-    // {
-    //     type: 'input',
-    //     name: 'usage',
-    //     message: 'What are uses for this app? (Required)',
-    //     validate: usageInput => {
-    //         if (usageInput) {
-    //             return true;
-    //         } else {
-    //             console.log('Please describe uses for this app!');
-    //             return false;
-    //         }
-    //     }
-    // },
     {
         type: 'input',
         name: 'collaborators',
@@ -95,7 +82,6 @@ const questions = [
 // fs.writeFile
 // }
 
-
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((response) => {
@@ -103,8 +89,13 @@ function init() {
             if (err) {
                 throw err;
             }
-    
+
         })
+    })
+
+}
+
+init();
     //     fs.appendFileSync("README.md", ("##" + response.title + '\n') + '\n', function (err) {
     //         if (err) {
     //             console.log(err)
@@ -181,11 +172,7 @@ function init() {
     //         }
     //     })
     //     console.log("Check out your brand new README file");
-    })
-
-}
-
 
 // function call to initialize program
-init();
+
 
