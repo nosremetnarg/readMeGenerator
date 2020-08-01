@@ -1,20 +1,22 @@
 
-# groupProject
+# spotify-web-api-js
 ## DEVELOPED BY: 
-github.com/nosremetnarg
+github.com/JMPerez
 ## DESCRIPTION:
-nononfff
+this is cool
 ## LANGUAGES USED:
- JavaScript , HTML , CSS , jQuery 
+ JavaScript , HTML , CSS , ES6 , jQuery , Bootstrap , Node 
 ## HOW TO INSTALL THIS APP:
-too many
+noedd
 ## CONTRIBUTING DEVELOPERS:
-a lot
-## LICENSE(S)
 none
+## LICENSE(S)
 
-![GitHub followers](https://img.shields.io/github/followers/nosremetnarg?label=GitHub%20Followers&logo=Github&?style=social)
 
-![GitHub language count](https://img.shields.io/github/languages/count/nosremetnarg/groupProject?logo=GitHub)
+![GitHub](https://img.shields.io/github/license/JMPerez/spotify-web-api-js)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/nosremetnarg/groupProject)
+![GitHub followers](https://img.shields.io/github/followers/JMPerez?label=GitHub%20Followers&logo=Github&?style=social)
+
+![GitHub language count](https://img.shields.io/github/languages/count/JMPerez/spotify-web-api-js?logo=GitHub)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/JMPerez/spotify-web-api-js)
