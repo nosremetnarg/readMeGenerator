@@ -1,12 +1,8 @@
 const inquirer = require('inquirer');
-const generatePage = require('./src/page-template.js');
-const { writeFile } = require('./utils/generateMarkdown.js');
+// const generatePage = require('./src/page-template.js');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 const fs = require('fs');
 
-
-// array of questions for user
-// const promptUser = () => {
-//     return inquirer.prompt([
 const questions = [
     {
         type: 'input',
@@ -53,18 +49,6 @@ const questions = [
         message: 'What did you this project with? (Check all that apply)',
         choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
     },
-    // {
-    //     type: 'confirm',
-    //     name: 'confirmTableOfContents',
-    //     message: 'Would you like to add a table of contents to this README?',
-    //     default: true
-    // },
-    // {
-    //     type: 'input',
-    //     name: 'confirmAddTableOfContents',
-    //     message: 'Let\'s add some features?',
-    //     when: ({ confirmTableOfContents }) => confirmTableOfContents
-    // },
     {
         type: 'input',
         name: 'installation',
@@ -96,125 +80,112 @@ const questions = [
         name: 'collaborators',
         message: 'Did you have any collaborators on this app?'
 
+    },
+    {
+        type: 'input',
+        name: 'license',
+        message: 'What license will you use? If you will not use a license enter "none"'
+
     }
-    // {
-    //     type: 'input',
-    //     name: 'about',
-    //     message: 'Provide some information about your collaborators:',
-    //     // when: ({ confirmCollaborator }) => confirmCollaborator
-    // }
+
 ]
-//     ]);
-// };
-
-// const promptProject = portfolioData => {
-//     if (!portfolioData) {
-//         portfolioData = [];
-//     }
-//     console.log (`
-//     =========================
-//     Did you work with anyone?
-//     =========================
-//     `);
-//     return inquirer.prompt([
-
-//     ])
-
-// }
-// console log answers into an object
-// promptUser()
-//     .then(answers => console.log(answers))
-// .then(promptProject)
-// .then(projectAnswers => {
-//     console.log(projectAnswers)
-//     const pageHTML = generatePage(portfolioData);
-
-
-
 
 // function to write README file
-function writeToFile(fileName, data) {
-}
+// function writeToFile(fileName, data) {
+// fs.writeFile
+// }
+
 
 // function to initialize program
 function init() {
     inquirer.prompt(questions).then((response) => {
-
-        fs.appendFileSync("README.md", ("#" + response.title) + '\n', function (err) {
+        fs.writeFile("README.md", generateMarkdown(response), err => {
             if (err) {
-                console.log(err)
+                throw err;
             }
-            else {
-                console.log("Success")
-            }
+    
         })
-    
-    fs.appendFileSync("README.md", ("This application was developed by: " + response.gitHubName + '\n') + '\n', function(err) { 
+    //     fs.appendFileSync("README.md", ("##" + response.title + '\n') + '\n', function (err) {
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
+    //     })
 
-        if (err) { 
-        console.log(err)
-        }
-        else {
-        console.log("Success")
-        }
-    
-    })
-    fs.appendFileSync("README.md", ( response.description ) + '\n', function(err) { 
+    //     fs.appendFileSync("README.md", ("This application was developed by: " + response.gitHubName + '\n') + '\n', function (err) {
 
-        if (err) { 
-        console.log(err)
-        }
-        else {
-        console.log("Success")
-        }
-    
-    })
-    fs.appendFileSync("README.md", ("## Other Contibuting Developers:" + '\n' + response.installation)+ '\n', function(err) { 
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
 
-        if (err) { 
-        console.log(err)
-        }
-        else {
-        console.log("Success")
-        }
-    
-    })
-    
-    fs.appendFileSync("README.md", ("## How to use the Application" + '\n' + response.usage)+ '\n', function(err) { 
+    //     })
+    //     fs.appendFileSync("README.md", (response.description) + '\n', function (err) {
 
-        if (err) { 
-        console.log(err)
-        }
-        else {
-        console.log("Success")
-        }
-    
-    })
-    fs.appendFileSync("README.md", ("## Other Contibuting Developers:" + '\n' + response.collaborators)+ '\n', function(err) { 
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
 
-        if (err) { 
-        console.log(err)
-        }
-        else {
-        console.log("Success")
-        }
-    
-    })
-    fs.appendFileSync("README.md", ("## Licence(s)" + '\n' + response.license)+ '\n', function(err) { 
+    //     })
 
-        if (err) { 
-        console.log(err)
-        }
-        else {
-        console.log("Success")
-        }
-    
+    //     fs.appendFileSync("README.md", ("## How to install this app:" + '\n' + response.installation) + '\n', function (err) {
+
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
+    //     })
+    //     fs.appendFileSync("README.md", (response.languages) + '\n', function (err) {
+
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
+    //     })
+    //     fs.appendFileSync("README.md", ("## How to use the Application" + '\n' + response.usage) + '\n', function (err) {
+
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
+    //     })
+    //     fs.appendFileSync("README.md", ("## Other Contributing Developers:" + '\n' + response.collaborators) + '\n', function (err) {
+
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
+
+    //     })
+    //     fs.appendFileSync("README.md", ("## Licence(s)" + '\n' + response.license) + '\n', function (err) {
+    //         if (err) {
+    //             console.log(err)
+    //         }
+    //         else {
+    //             console.log("Success")
+    //         }
+    //     })
+    //     console.log("Check out your brand new README file");
     })
-})
+
 }
 
 
 // function call to initialize program
 init();
 
-// console.log(response.title);
