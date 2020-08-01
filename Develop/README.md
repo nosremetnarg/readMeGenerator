@@ -1,13 +1,13 @@
 
-# GRANTS DOPE APP
+# GRANTS COOL APP
 ## DEVELOPED BY: 
-nosremetnarg
+github.com/nosremetnarg
 ## DESCRIPTION:
-this app is for building readme files
+its so cool I think i have fallen in love
 ## LANGUAGES USED:
 JavaScript ,HTML ,CSS ,ES6 ,jQuery ,Bootstrap ,Node 
 ## HOW TO INSTALL THIS APP:
-node and npm inquirer
+npm
 ## CONTRIBUTING DEVELOPERS:
 none
 ## LICENSE(S)

@@ -2,7 +2,7 @@
 function generateMarkdown(data) {
   return `
 ${"# " + data.title }
-${"## DEVELOPED BY: " +  '\n' + data.gitHubName}
+${"## DEVELOPED BY: " +  '\n' + "github.com/" + data.gitHubName}
 ${"## DESCRIPTION:"+ '\n' + data.description}
 ${"## LANGUAGES USED:" + '\n' + data.languages}
 ${"## HOW TO INSTALL THIS APP:" + '\n' + data.installation}
