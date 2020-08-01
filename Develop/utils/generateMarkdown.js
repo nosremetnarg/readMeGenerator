@@ -1,14 +1,13 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `
-${"###" + data.title + "hotdog"}
-${"#This app was developed by: " +  '\n' + data.gitHubName + '\n'}
-${data.description + '\n'}
-${"## Languages used in the app:" + '\n' + data.languages}
-${"## How to install this app:" + '\n' + data.installation}
-${data.usage}
-${"# Other Contributing Developers:" + '\n'  + data.collaborators}
-${"# Licence(s)" + '\n' + data.license}
+${"# " + data.title }
+${"## DEVELOPED BY: " +  '\n' + data.gitHubName}
+${"## DESCRIPTION:"+ '\n' + data.description}
+${"## LANGUAGES USED:" + '\n' + data.languages}
+${"## HOW TO INSTALL THIS APP:" + '\n' + data.installation}
+${"## CONTRIBUTING DEVELOPERS:" + '\n'  + data.collaborators}
+${"## LICENSE(S)" + '\n' + data.license}
 `;
 }
 

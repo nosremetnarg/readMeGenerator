@@ -47,7 +47,7 @@ const questions = [
         type: 'checkbox',
         name: 'languages',
         message: 'What did you this project with? (Check all that apply)',
-        choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+        choices: ['JavaScript ', 'HTML ', 'CSS ', 'ES6 ', 'jQuery ', 'Bootstrap ', 'Node ']
     },
     {
         type: 'input',
@@ -62,23 +62,23 @@ const questions = [
             }
         }
     },
-    {
-        type: 'input',
-        name: 'usage',
-        message: 'What are uses for this app? (Required)',
-        validate: usageInput => {
-            if (usageInput) {
-                return true;
-            } else {
-                console.log('Please describe uses for this app!');
-                return false;
-            }
-        }
-    },
+    // {
+    //     type: 'input',
+    //     name: 'usage',
+    //     message: 'What are uses for this app? (Required)',
+    //     validate: usageInput => {
+    //         if (usageInput) {
+    //             return true;
+    //         } else {
+    //             console.log('Please describe uses for this app!');
+    //             return false;
+    //         }
+    //     }
+    // },
     {
         type: 'input',
         name: 'collaborators',
-        message: 'Did you have any collaborators on this app?'
+        message: 'Did you have any collaborators on this app? If no enter "none"'
 
     },
     {

@@ -1,16 +1,14 @@
 
-###node apppppppphotdog
-#This app was developed by: 
+# GRANTS DOPE APP
+## DEVELOPED BY: 
 nosremetnarg
-
-describe this app
-
-## Languages used in the app:
-CSS,ES6,jQuery
-## How to install this app:
-install node and npm
-creating readme files
-# Other Contributing Developers:
-no
-# Licence(s)
+## DESCRIPTION:
+this app is for building readme files
+## LANGUAGES USED:
+JavaScript ,HTML ,CSS ,ES6 ,jQuery ,Bootstrap ,Node 
+## HOW TO INSTALL THIS APP:
+node and npm inquirer
+## CONTRIBUTING DEVELOPERS:
+none
+## LICENSE(S)
 none
